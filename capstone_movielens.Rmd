@@ -22,7 +22,7 @@ knitr::opts_chunk$set(eval = TRUE, echo = FALSE, message = FALSE, warning = FALS
 options(tinytex.verbose = TRUE)
 ```
 # Introduction and Objective
-According to Irizaary (2019), a recommendation system is a type of machine learning model that uses data such as user input and behavior to predict other items the user may be interested in consuming; these predicted items are then recommended to the user. Netflix uses a recommendation system based on user ratings to predict other movies a user might enjoy (Irizarry, 2019).
+According to Irizarry (2019), recommendation system is a type of machine learning model that uses data such as user input and behavior to predict other items the user may be interested in consuming; these predicted items are then recommended to the user. Netflix uses a recommendation system based on user ratings to predict other movies a user might enjoy (Irizarry, 2019).
 Inspired by the Netflix Prize in October of 2006 where Netflix offered one million dollars to anyone that could improve their recommendation system by 10%, this project will create a movie recommendation system model that predicts the rating a specific user would give to a specific movie. The Root Mean Squared Error (RMSE) will be used to evaluate the accuracy of the model, with the goal being an RMSE of less than 0.8649 when the model is run on previously unseen data. 
 This project is required coursework for the HarvardX PH125.9x Data Science: Capstone course.
 
