@@ -484,7 +484,7 @@ rmse_results%>%knitr::kable()
  While the goal RMSE has already been achieved, the other features will be explored in case they further reduce the RMSE.
  
 ## Genre Effect
-The data exploration shows that different genre combinations have different average ratings, so the previous model can be improved by adding a genre bias: $$Y_{u,i} = \mu + b_{i} + b_{u} + b_{g} + \epsilon_{u,i}$$ where $b_{g}$ represents the average rating for genre combination $g$. The least squares estimate of $b_{g}$ is the average of $Y_{u,i}$ - $\mu$ - $b_{i}$ - $b_{u}$ for each genre combination $g$. The following code is used to determine the bias associated with each genre combination and vizualize the bias:
+The data exploration shows that different genre combinations have different average ratings, so the previous model can be improved by adding a genre bias: $$Y_{u,i} = \mu + b_{i} + b_{u} + b_{g} + \epsilon_{u,i}$$ where $b_{g}$ represents the average rating for genre combination $g$. The least squares estimate of $b_{g}$ is the average of $Y_{u,i}$ - $\mu$ - $b_{i}$ - $b_{u}$ for each genre combination $g$. The following code is used to determine the bias associated with each genre combination and visualize the bias:
 ```{r genre-rmse-1, echo=TRUE, fig.cap="Genre biases"}
 #calculate bias
 genre_avgs <- train_set %>%
@@ -1320,7 +1320,7 @@ rmse_results%>%knitr::kable()
  While the goal RMSE has already been achieved, the other features will be explored in case they further reduce the RMSE.
  
 ## Genre Effect
-The data exploration shows that different genre combinations have different average ratings, so the previous model can be improved by adding a genre bias: $$Y_{u,i} = \mu + b_{i} + b_{u} + b_{g} + \epsilon_{u,i}$$ where $b_{g}$ represents the average rating for genre combination $g$. The least squares estimate of $b_{g}$ is the average of $Y_{u,i}$ - $\mu$ - $b_{i}$ - $b_{u}$ for each genre combination $g$. The following code is used to determine the bias associated with each genre combination and vizualize the bias:
+The data exploration shows that different genre combinations have different average ratings, so the previous model can be improved by adding a genre bias: $$Y_{u,i} = \mu + b_{i} + b_{u} + b_{g} + \epsilon_{u,i}$$ where $b_{g}$ represents the average rating for genre combination $g$. The least squares estimate of $b_{g}$ is the average of $Y_{u,i}$ - $\mu$ - $b_{i}$ - $b_{u}$ for each genre combination $g$. The following code is used to determine the bias associated with each genre combination and visualize the bias:
 ```{r genre-rmse-1, echo=TRUE, fig.cap="Genre biases"}
 #calculate bias
 genre_avgs <- train_set %>%
